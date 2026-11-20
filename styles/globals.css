@@ -202,14 +202,16 @@ main {
   border-top: 2px solid var(--theme);
 }
 
-body::-webkit-scrollbar,.scrollBox::-webkit-scrollbar {
+body::-webkit-scrollbar,
+.scrollBox::-webkit-scrollbar {
   width: 6px;
   height: 4px;
   background: lightgray;
   border-radius: 10px;
 }
 
-body::-webkit-scrollbar-thumb, .scrollBox::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb,
+.scrollBox::-webkit-scrollbar-thumb {
   background: var(--theme);
   border-radius: 10px;
 }
