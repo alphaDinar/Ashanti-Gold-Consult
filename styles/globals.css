@@ -29,9 +29,16 @@
   font-style: normal;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Gellovik';
   src: url('/fonts/gellovik.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: 'Gellovik';
+  src: url('/fonts/gellovik.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -206,8 +213,6 @@ body::-webkit-scrollbar-thumb, .scrollBox::-webkit-scrollbar-thumb {
   background: var(--theme);
   border-radius: 10px;
 }
-
-
 
 ul,
 li {
