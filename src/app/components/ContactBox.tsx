@@ -17,9 +17,9 @@ import Image from "next/image";
 const ContactBox = () => {
     const channelList: { tag: string, href: string, con: string[], icon: ReactNode }[] = [
         { tag: "call us", href: `tel:${adminContact}`, con: [adminContact, ""], icon: <PiPhoneCall /> },
-        { tag: "mail", href: "mailto:sales@villanuevaghana.org", con: ["sales@villanuevaghana.org"], icon: <MdMailOutline /> },
+        { tag: "mail", href: "mailto:info@ashantigoldconsulting.com", con: ["info@ashantigoldconsulting.com"], icon: <MdMailOutline /> },
         { tag: "office hours", href: "https://maps.app.goo.gl/e3ety8P9nm65fk7D6", con: ["Mon - Fri : 8:00 - 5:00"], icon: <LuAlarmClock /> },
-        { tag: "location", href: "https://maps.app.goo.gl/e3ety8P9nm65fk7D6", con: ["Tema Community 22", "Borteyman"], icon: <SlLocationPin /> },
+        // { tag: "location", href: "https://maps.app.goo.gl/e3ety8P9nm65fk7D6", con: ["Tema Community 22", "Borteyman"], icon: <SlLocationPin /> },
     ]
 
     const [name, setName] = useState("");
