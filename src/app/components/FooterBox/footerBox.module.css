@@ -1,0 +1,157 @@
+.footerBox {
+  display: grid;
+  gap: 2.5vh;
+  background: rgb(249, 249, 249);
+  background: var(--bg);
+  padding-top: 4vh;
+  color: white;
+  padding-bottom: 4vh;
+}
+
+.footerBox hr {
+  border-top: 1px solid var(--line);
+}
+
+.quickBox,
+.officeBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.linkBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.quickBox p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.officeBox .left,
+.officeBox .right p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.officeBox .left small {
+  font-weight: 600;
+  color: var(--pass);
+}
+
+.officeBox .left strong {
+  font-size: 1.3rem;
+}
+
+.officeBox .right {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.officeBox .right svg:nth-child(1) {
+  font-size: 3rem;
+  color: var(--pass);
+}
+
+
+.linkBox .left {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.linkBox .left article,
+.linkBox .left article p {
+  display: grid;
+}
+
+.linkBox .left article p>* {
+  font-size: 0.9rem;
+  color: rgb(71, 71, 71);
+  color: white;
+}
+
+.footerBox form {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.footerBox form textarea {
+  resize: none;
+  height: 80px;
+}
+
+.footerBox form textarea,
+.footerBox form input {
+  width: 250px;
+  padding: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.footerBox form button {
+  background: var(--pass);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  padding: 8px;
+}
+
+
+.yotaTag {
+  text-align: center;
+  color: #16BD6A;
+  cursor: pointer;
+}
+
+@media all and (max-width:750px) {
+
+  .quickBox,
+  .officeBox,
+  .linkBox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .officeBox .left,
+  .officeBox .right p {
+    align-items: center;
+  }
+
+  .officeBox .right {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .linkBox {
+    gap: 1.5rem;
+  }
+
+  .linkBox .left {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .footerBox form {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerBox form textarea,
+  .footerBox form input {
+    width: calc(100% - 16px);
+  }
+
+}

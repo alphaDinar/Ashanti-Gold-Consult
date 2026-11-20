@@ -1,0 +1,122 @@
+.topNav {
+  padding-top: 4vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topNav nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+
+.topNav nav a {
+  color: black;
+}
+
+.topNav nav a sub {
+  display: block;
+  height: 3px;
+  width: 10%;
+  background: var(--theme);
+  border-radius: 40px;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.topNav nav a:hover sub {
+  width: 100%;
+  opacity: 1;
+}
+
+.tab {
+  background: var(--theme);
+  padding: 5px 10px;
+  color: white !important;
+  text-align: center;
+  border-radius: 40px;
+}
+
+.darkTab {
+  width: 20px;
+  height: 45px;
+  background: black;
+  border-radius: 40px;
+  padding: 4px 3px;
+  cursor: pointer;
+  position: relative;
+}
+
+.darkTab sub {
+  position: absolute;
+  top: 4px;
+  display: block;
+  height: 20px;
+  width: 20px;
+  transition: 0.3s ease;
+  background: var(--theme);
+  border-radius: 50%;
+}
+
+.darkTab.change sub {
+  top: calc(100% - 23px);
+}
+
+.menuTag {
+  display: none;
+}
+
+
+@media all and (max-width:1050px) {
+  .topNav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topNav nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    background: var(--secondary);
+    background: var(--bg);
+    width: 150px;
+    padding: 15px;
+    border-radius: 20px;
+    position: fixed;
+    top: 10px;
+    z-index: 1000;
+    right: -180px;
+    transition: 0.4s ease;
+  }
+
+  .topNav nav.change {
+    right: 10px;
+  }
+
+
+  .topNav nav a {
+    color: white;
+  }
+
+  .menuTag {
+    display: flex;
+    background: var(--bg);
+    color: white;
+    /* padding: 10px; */
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    position: fixed;
+    /* right: calc(100% + 3px); */
+    right: 1.5rem;
+    top: 2.5rem;
+    cursor: pointer;
+  }
+
+  .darkTab {
+    background: white;
+  }
+}
