@@ -12,7 +12,7 @@ const HeadBox = () => {
           <span>THE global </span>
           <span className='text-secondary'>market</span>
         </p>
-        <div className='w-44 h-44 absolute -right-8 -translate-y-11 md-screen:w-32 md-screen:h-32 sm-screen:w-24 sm-screen:h-24 sm-screen:translate-y-12 sm-screen:right-16'>
+        <div className='w-44 h-44 absolute -right-8 -translate-y-11 md-screen:w-32 md-screen:h-32 sm-screen:w-12 sm-screen:h-12 sm-screen:-top-2 sm-screen:-translate-y-0 sm-screen:right-1'>
           <Image src={goldStone} alt='' fill objectFit='contain' />
         </div>
       </section>

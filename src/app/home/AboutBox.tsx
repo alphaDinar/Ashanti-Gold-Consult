@@ -27,8 +27,8 @@ const AboutBox = () => {
       </section>
 
 
-      <section className="absolute left-[36%] -translate-y-6 rotate-12 flex items-center md-screen:relative md-screen:left-0 md-screen:rotate-0 md-screen:-translate-y-0 sm-screen:flex-col sm-screen:items-start sm-screen:w-full">
-        <img src={"https://res.cloudinary.com/dvnemzw0z/image/upload/v1795148927/Testers/ghana_gold_d2puka.webp"} className="w-60 h-60 rounded-2xl object-cover sm-screen:w-full sm-screen:rounded-[12px_12px_12px_0]">
+      <section className="absolute left-[38%] -translate-y-10 rotate-12 flex items-center md-screen:relative md-screen:left-0 md-screen:rotate-0 md-screen:-translate-y-0 sm-screen:flex-col sm-screen:items-start sm-screen:w-full">
+        <img src={"https://res.cloudinary.com/dvnemzw0z/image/upload/v1795148927/Testers/ghana_gold_d2puka.webp"} className="w-80 h-80 rounded-2xl object-cover sm-screen:w-full sm-screen:rounded-[12px_12px_12px_0] mob-screen:h-60">
         </img>
         <div className="bg-dark-muted w-52 p-4 rounded-[0_10px_10px_0] sm-screen:rounded-[0_0_10px_0px]">
           Your social media pages have a clean,professional look, and it’Your social media pages have a

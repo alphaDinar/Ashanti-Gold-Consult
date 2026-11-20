@@ -140,7 +140,8 @@ main {
 }
 
 #hor,
-#box {
+#box,
+.hor {
   /* width: var(--wide); */
   padding-right: var(--pad);
   padding-left: var(--pad);

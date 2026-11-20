@@ -1,9 +1,11 @@
+import ContactBox from "./components/ContactBox";
 import ContactTag from "./components/ContactTag";
 import FooterBox from "./components/FooterBox/FooterBox";
 import TopNav from "./components/TopNav/TopNav";
 import AboutBox from "./home/AboutBox";
 import HeadBox from "./home/HeadBox";
 import SkillBox from "./home/SkillBox";
+import StepBox from "./home/StepBox";
 import TimeBox from "./home/TimeBox";
 
 const Home = () => {
@@ -14,11 +16,13 @@ const Home = () => {
         <HeadBox />
       </section>
 
-      {/* <StepBox /> */}
+      <StepBox />
 
       <AboutBox />
 
       <SkillBox />
+
+      <ContactBox />
 
       <TimeBox />
 
