@@ -9,9 +9,9 @@ const StepBox = () => {
 
   return (
     <section className='flex items-center'>
-      {/* <div className='w-40 h-40 relative sm-screen:h-20 sm-screen:w-20 z-40'>
+      <div className='w-40 h-40 relative sm-screen:h-20 sm-screen:w-20 z-40'>
         <Image alt='' src={goldStoneB} fill objectFit='contain' />
-      </div> */}
+      </div>
 
       <section className='-translate-x-8 flex items-center w-full'>
         <legend className='w-[13%] h-[1px] bg-secondary mob-screen:w-[15%]'></legend>

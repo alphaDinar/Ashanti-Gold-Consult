@@ -16,7 +16,9 @@ const Home = () => {
         <HeadBox />
       </section>
 
+    <section className="sm-screen:hidden">
       <StepBox />
+    </section>
 
       <AboutBox />
 

@@ -11,6 +11,8 @@ import Link from "next/link";
 import { Select, SelectItem } from "@heroui/select";
 import { addToast } from "@heroui/toast";
 import { adminContact } from "@/src/firebase/assets";
+import goldBg from '../../../public/gold_bg.webp';
+import Image from "next/image";
 
 const ContactBox = () => {
     const channelList: { tag: string, href: string, con: string[], icon: ReactNode }[] = [
@@ -52,8 +54,8 @@ const ContactBox = () => {
             <section className="grid">
                 <header>
                     <header>
-                        <span className="uppercase text-medium font-semibold text-secondary">Get In Touch</span>
-                        <h3 className="font-semibold text-white capitalize">contact us</h3>
+                        <span className="uppercase text-medium font-semibold text-secondary">contact us</span>
+                        <h3 className="font-semibold text-white capitalize text-4xl roboText sm-screen:text-3xl">Get In Touch</h3>
                     </header>
                     <span className="text-muted">{"Get in touch to schedule a viewing or speak with our team about owning a home at Villa Nueva."}</span>
                 </header>
@@ -133,11 +135,8 @@ const ContactBox = () => {
             </section >
 
             <section className="flex flex-col gap-10 mob-screen:gap-5">
-                <div className="flex-1 bg-secondary mob-screen:min-h-40 flex">
-                    <iframe className="h-full" title="mapBox" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.318333880658!2d-0.08218212496663665!3d5.6670267943144355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf83aa70433ccd%3A0xf90aa9b53510265b!2sVilla%20Nueva%20Ghana!5e0!3m2!1sen!2sgh!4v1769596105454!5m2!1sen!2sgh"
-                        width="100%"
-                        loading="lazy" referrerPolicy="no-referrer-when-downgrade">
-                    </iframe>
+                <div className="flex-1 bg-secondary mob-screen:min-h-40 flex relative">
+                    <Image alt="" src={goldBg} fill objectFit="cover" />
                 </div>
                 <section className="grid gap-5">
                     <header>
